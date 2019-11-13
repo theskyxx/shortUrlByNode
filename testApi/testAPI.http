@@ -1,0 +1,27 @@
+
+#### Test API POST Genarate URL
+## 1  case False
+POST http://localhost:3000/api/v1/genUrl
+content-type: application/json
+
+{
+    "originUrl" : "http://sanook.coms"
+}
+
+
+###### 2 case true
+POST http://localhost:3000/api/v1/genUrl
+content-type: application/json
+
+{
+    "originUrl" : "http://sanook.com"
+}
+
+###### 3 not  http
+POST http://localhost:3000/api/v1/genUrl
+content-type: application/json
+
+{
+    "originUrl" : "sanook.com"
+}
+

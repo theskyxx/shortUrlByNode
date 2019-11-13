@@ -1,0 +1,23 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon -e ejs,js index.js"
+  },
+  "dependencies": {
+    "@koa/cors": "^2.2.2",
+    "browserify": "^16.2.3",
+    "koa": "^2.5.2",
+    "koa-body": "^4.0.4",
+    "koa-ejs": "^4.1.2",
+    "koa-router": "^7.4.0",
+    "koa-session": "^5.12.3",
+    "koa-static": "^5.0.0",
+    "moment": "^2.23.0",
+    "nodemon": "^1.18.3",
+    "sqlite3": "^4.1.0",
+    "url-exists": "^1.0.3"
+  }
+}
