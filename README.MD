@@ -2,7 +2,7 @@
 A simple process gen short url
 
 ## Usage
-1.
+1.install package
 ```sh
 npm install
 ```
