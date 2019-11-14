@@ -20,9 +20,9 @@ const db = new sqlite3.Database(':memory:', (err) => {
 function select(shortUrl) {
     return new Promise((resolve, reject) => {
         const queries = [];
-        const sql = "SELECT rowid AS id,originUrl,shortUrl FROM urldesc where shortUrl= '" + shortUrl +"' "
+        const sql = "SELECT rowid AS id,originUrl,shortUrl FROM urldesc where shortUrl= ? "
         //console.log(sql)        
-        db.each(sql, (err, row) => {
+        db.each(sql,[shortUrl], (err, row) => {
             if (err) {
                 reject(err); // optional: you might choose to swallow errors.
             } else {

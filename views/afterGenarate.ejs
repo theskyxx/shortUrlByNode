@@ -8,10 +8,10 @@
                 <p class="subtitle">
                   place url for Genarate
                 </p>
-                <form name="form1" method="POST" action="/api/v1/genUrl"  >
+                <form name="form1" method="POST" action="createUrl"  >
                   <div class="field">
                     <div class="control">
-                      <input class="input" type="text" placeholder="Input">
+                      <input class="input" type="text" placeholder="Input" name="originUrl">
                     </div>
                   </div>
                   <div class="buttons">
@@ -23,6 +23,8 @@
         </div>
         <br>
         <div class="bd-index-custom bd-is-after">
+            <p class="bd-index-custom-title">origin Url</p>
+            <p class="subtitle has-text-warning" ><%- originUrl %></a>          
                 <p class="bd-index-custom-title">New Short Url</p>
                 <a href="<%- shorUrl %>" class="subtitle has-text-link" target="_blank"><%- shorUrl %></a>
         </div>
